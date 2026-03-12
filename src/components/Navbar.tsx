@@ -1,3 +1,4 @@
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
