@@ -1,0 +1,23 @@
+.publications-section {
+  margin: 3rem 0;
+}
+.publications-list {
+  list-style: none;
+  padding: 0;
+}
+.publication-item {
+  margin-bottom: 1.5rem;
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.publication-item strong {
+  font-size: 1.1rem;
+}
+.publication-item a {
+  color: #007acc;
+  text-decoration: underline;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
