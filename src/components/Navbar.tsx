@@ -64,21 +64,6 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a data-href="#publications" href="#publications">
-              <HoverLinks text="PUBLICATIONS" />
-            </a>
-          </li>
-          <li>
-            <a href="/NITHIN%20RONTALA.pdf" target="_blank" rel="noopener noreferrer">
-              <HoverLinks text="RESUME" />
-            </a>
-          </li>
-          <li>
-            <a data-href="#patents" href="#patents">
-              <HoverLinks text="PATENTS" />
-            </a>
-          </li>
-          <li>
             <a data-href="#contact" href="#contact">
               <HoverLinks text="CONTACT" />
             </a>
