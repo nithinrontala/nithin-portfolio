@@ -18,7 +18,7 @@ const Career = () => {
                 <h4>Master of Science in Data Science</h4>
                 <h5>IIIT Hyderabad</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2026</h3>
             </div>
             <p>
               Specialized in Data Science with Artificial Intelligence.

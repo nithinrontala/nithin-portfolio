@@ -88,11 +88,12 @@ const WhatIDo = () => {
 
             <div className="what-content-in">
               <h3>MACHINE LEARNING</h3>
-              <h4>Building Intelligent Models</h4>
+              <h4>Building Intelligent Systems</h4>
               <p>
-                Developing AI/ML solutions for real-world problems including
-                violence detection, gesture recognition, and NLP-based
-                classification. From data preprocessing to deployment.
+                Designing and deploying AI systems that improve user engagement,
+                automate decision-making, and transform raw data into measurable
+                product value. My work spans NLP, generative AI, and production-ready
+                model pipelines.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
@@ -103,7 +104,7 @@ const WhatIDo = () => {
                 <div className="what-tags">OpenCV</div>
                 <div className="what-tags">NLP</div>
                 <div className="what-tags">Deep Learning</div>
-                <div className="what-tags">Computer Vision</div>
+                <div className="what-tags">AWS</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -128,22 +129,22 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
             <div className="what-content-in">
               <h3>DATA SCIENCE</h3>
-              <h4>Data-Driven Insights</h4>
+              <h4>Insightful, Scalable Solutions</h4>
               <p>
-                Analyzing and visualizing complex datasets to extract meaningful
-                insights. Building data pipelines, performing statistical analysis,
-                and deploying models at scale.
+                Turning complex data into practical insights through preprocessing,
+                modeling, experimentation, and deployment. I build pipelines and
+                user-facing applications that connect research with real-world impact.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">Pandas</div>
                 <div className="what-tags">NumPy</div>
-                <div className="what-tags">Matplotlib</div>
                 <div className="what-tags">SQL</div>
-                <div className="what-tags">R</div>
+                <div className="what-tags">MongoDB</div>
+                <div className="what-tags">FastAPI</div>
+                <div className="what-tags">React</div>
                 <div className="what-tags">Jupyter</div>
                 <div className="what-tags">Data Visualization</div>
-                <div className="what-tags">Statistics</div>
               </div>
               <div className="what-arrow"></div>
             </div>

@@ -5,34 +5,16 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Video Analytics",
-    category: "AI/ML",
-    tools: "Python, OpenCV, Face Detection, Audio Transcription",
+    title: "AI Humaniser",
+    category: "NLP / Generative AI",
+    tools: "Python, LLM workflows, Prompt tuning, AWS EC2, Humanized text generation",
     image: "/images/1.png",
   },
   {
-    title: "Violence Detection",
-    category: "Computer Vision",
-    tools: "Python, Deep Learning, CCTV Monitoring, AI/ML",
-    image: "/images/violence.png",
-  },
-  {
-    title: "Hand Gesture Recognition",
-    category: "Computer Vision",
-    tools: "Python, Machine Learning, Gesture Recognition",
-    image: "/images/gesture.png",
-  },
-  {
-    title: "Twitter URL-Based Classification",
-    category: "NLP / Classification",
-    tools: "Python, Machine Learning, NLP, Learning Automata",
-    image: "/images/twitter.png",
-  },
-  {
-    title: "Age And Gender Prediction",
-    category: "Computer Vision",
-    tools: "Python, Deep Learning, Facial Recognition",
-    image: "/images/age-gender.png",
+    title: "Learning Hub",
+    category: "Full-stack Application",
+    tools: "MongoDB, React, Program discovery, Applicant workflow, Counselor review system",
+    image: "/images/placeholder.webp",
   },
 ];
 

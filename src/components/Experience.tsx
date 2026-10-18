@@ -15,6 +15,37 @@ const Experience = () => {
           <div className="experience-info-box">
             <div className="experience-info-in">
               <div className="experience-role">
+                <h4>Associate Software Engineer</h4>
+                <h5>LoginRadius</h5>
+              </div>
+              <h3>2026</h3>
+            </div>
+            <div className="experience-desc">
+              <p>May 2026 - Present</p>
+              <ul>
+                <li>Working on product development and continuous improvements.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="experience-info-box">
+            <div className="experience-info-in">
+              <div className="experience-role">
+                <h4>AI Developer Freelancer</h4>
+                <h5>Kautilya AI</h5>
+              </div>
+              <h3>2025</h3>
+            </div>
+            <div className="experience-desc">
+              <p>Nov 2025 - Jan 2026</p>
+              <ul>
+                <li>Worked on automating lead generation.</li>
+                <li>Implemented Snapchat and Google Ads automation.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="experience-info-box">
+            <div className="experience-info-in">
+              <div className="experience-role">
                 <h4>AI/ML Intern</h4>
                 <h5>BYOL Academy</h5>
               </div>
