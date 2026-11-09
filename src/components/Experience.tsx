@@ -21,7 +21,7 @@ const Experience = () => {
               <h3>2026</h3>
             </div>
             <div className="experience-desc">
-              <p>May 2026 - Present</p>
+              <p>Mar 2026 - Present</p>
               <ul>
                 <li>Working on product development and continuous improvements.</li>
               </ul>
