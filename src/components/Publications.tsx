@@ -1,20 +1,31 @@
 import { useState, useCallback } from "react";
 import "./styles/Work.css";
+import WorkImage from "./WorkImage";
+import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const publications = [
   {
-    title: "Automated Bot Detection on Twitter Using URL Patterns and Learning Automata",
+    title:
+      "Automated Bot Detection on Twitter Using URL Patterns and Learning Automata",
     authors: "Nithin Rontala, et al.",
-    journal: "Int. J. Eng. Tech. & Mgmt. Sci. Vol. 8, Issue 3, May-June 2024",
+    journal:
+      "International Journal of Engineering Technology & Management Sciences (IJETMS), Vol. 8, Issue 3, 2024",
     link: "https://doi.org/10.46647/ijetms.2024.v08i03.025",
+    description:
+      "Research publication proposing an automated bot classification method analyzing URL patterns, domain reputations, and learning automata to identify automated bot behavior on social media with high precision.",
+    image: "/images/twitter.png",
   },
   {
-    title: "Speaking Hands: Advancing Communication with Gesture Recognition Systems",
+    title:
+      "Speaking Hands: Advancing Communication with Gesture Recognition Systems",
     authors: "Nithin Rontala, et al.",
-    journal: "International Conference on Computational Intelligence and Communication Networks (ICCICN-24)",
-    link: "#",
+    journal:
+      "International Conference on Computational Intelligence and Communication Networks (ICCICN-24)",
+    link: "https://github.com/nithinrontala",
+    description:
+      "Presented a deep learning vision system for real-time sign and hand gesture classification to facilitate accessible and intuitive communication for hearing and speech impaired individuals.",
+    image: "/images/gesture.png",
   },
-  // Add more publications here if needed
 ];
 
 const Publications = () => {
@@ -32,12 +43,14 @@ const Publications = () => {
   );
 
   const goToPrev = useCallback(() => {
-    const newIndex = currentIndex === 0 ? publications.length - 1 : currentIndex - 1;
+    const newIndex =
+      currentIndex === 0 ? publications.length - 1 : currentIndex - 1;
     goToSlide(newIndex);
   }, [currentIndex, goToSlide]);
 
   const goToNext = useCallback(() => {
-    const newIndex = currentIndex === publications.length - 1 ? 0 : currentIndex + 1;
+    const newIndex =
+      currentIndex === publications.length - 1 ? 0 : currentIndex + 1;
     goToSlide(newIndex);
   }, [currentIndex, goToSlide]);
 
@@ -45,7 +58,7 @@ const Publications = () => {
     <div className="work-section" id="publications">
       <div className="work-container section-container">
         <h2>
-          My <span>Publications</span>
+          Research <span>Publications</span>
         </h2>
 
         <div className="carousel-wrapper">
@@ -56,7 +69,7 @@ const Publications = () => {
             aria-label="Previous publication"
             data-cursor="disable"
           >
-            &#8592;
+            <MdArrowBack />
           </button>
           <button
             className="carousel-arrow carousel-arrow-right"
@@ -64,7 +77,7 @@ const Publications = () => {
             aria-label="Next publication"
             data-cursor="disable"
           >
-            &#8594;
+            <MdArrowForward />
           </button>
 
           {/* Slides */}
@@ -85,14 +98,20 @@ const Publications = () => {
                       <div className="carousel-details">
                         <h4>{pub.title}</h4>
                         <p className="carousel-category">{pub.authors}</p>
+                        <p className="carousel-desc-text">{pub.description}</p>
                         <div className="carousel-tools">
                           <span className="tools-label">Journal / Conference</span>
                           <p>{pub.journal}</p>
-                          {/* Read more button removed as requested */}
                         </div>
                       </div>
                     </div>
-                    {/* Optionally add an image or icon here for publications */}
+                    <div className="carousel-image-wrapper">
+                      <WorkImage
+                        image={pub.image}
+                        alt={pub.title}
+                        link={pub.link}
+                      />
+                    </div>
                   </div>
                 </div>
               ))}
@@ -104,7 +123,9 @@ const Publications = () => {
             {publications.map((_, index) => (
               <button
                 key={index}
-                className={`carousel-dot ${index === currentIndex ? "carousel-dot-active" : ""}`}
+                className={`carousel-dot ${
+                  index === currentIndex ? "carousel-dot-active" : ""
+                }`}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to publication ${index + 1}`}
                 data-cursor="disable"

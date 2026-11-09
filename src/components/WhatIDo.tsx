@@ -87,24 +87,26 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>MACHINE LEARNING</h3>
-              <h4>Building Intelligent Systems</h4>
+              <h3>SOFTWARE ENGINEERING</h3>
+              <h4>Robust, Scalable Architecture</h4>
               <p>
-                Designing and deploying AI systems that improve user engagement,
-                automate decision-making, and transform raw data into measurable
-                product value. My work spans NLP, generative AI, and production-ready
-                model pipelines.
+                Building reliable backend services, high-performance REST APIs,
+                and responsive full-stack applications. Strong foundation in
+                object-oriented programming, data structures, relational/NoSQL
+                databases, and modern cloud deployment.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">Python</div>
-                <div className="what-tags">TensorFlow</div>
-                <div className="what-tags">PyTorch</div>
-                <div className="what-tags">Scikit-Learn</div>
-                <div className="what-tags">OpenCV</div>
-                <div className="what-tags">NLP</div>
-                <div className="what-tags">Deep Learning</div>
+                <div className="what-tags">Java</div>
+                <div className="what-tags">FastAPI</div>
+                <div className="what-tags">React</div>
+                <div className="what-tags">REST APIs</div>
+                <div className="what-tags">MySQL</div>
+                <div className="what-tags">MongoDB</div>
+                <div className="what-tags">Supabase</div>
                 <div className="what-tags">AWS</div>
+                <div className="what-tags">Git</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -128,23 +130,25 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DATA SCIENCE</h3>
-              <h4>Insightful, Scalable Solutions</h4>
+              <h3>APPLIED AI & NLP</h3>
+              <h4>Intelligent Systems & Inference</h4>
               <p>
-                Turning complex data into practical insights through preprocessing,
-                modeling, experimentation, and deployment. I build pipelines and
-                user-facing applications that connect research with real-world impact.
+                Developing and deploying practical AI/ML solutions, automated
+                NLP pipelines, and humanized content transformation models.
+                Experienced in model optimization, real-time inference, and cloud
+                deployment on AWS EC2.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Pandas</div>
-                <div className="what-tags">NumPy</div>
-                <div className="what-tags">SQL</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">FastAPI</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Jupyter</div>
-                <div className="what-tags">Data Visualization</div>
+                <div className="what-tags">PyTorch</div>
+                <div className="what-tags">Hugging Face</div>
+                <div className="what-tags">Transformers</div>
+                <div className="what-tags">TensorFlow</div>
+                <div className="what-tags">Scikit-learn</div>
+                <div className="what-tags">OpenCV</div>
+                <div className="what-tags">spaCy / NLTK</div>
+                <div className="what-tags">AWS EC2</div>
+                <div className="what-tags">ML Pipelines</div>
               </div>
               <div className="what-arrow"></div>
             </div>

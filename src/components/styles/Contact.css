@@ -12,51 +12,118 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 50px;
 }
 
 .contact-flex {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .contact-flex h4 {
   font-weight: 500;
   margin: 0;
   opacity: 0.6;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .contact-box {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .contact-flex p {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 6px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #e2e8f0;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #e2e8f0;
+  transition: color 0.2s ease;
+}
+
+.contact-link svg {
+  color: var(--accentColor);
+  font-size: 18px;
+}
+
+.contact-link:hover {
+  color: var(--accentColor);
+}
+
+.contact-info-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #cbd5e1;
+}
+
+.contact-info-text svg {
+  color: var(--accentColor);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.contact-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
 }
 
 a.contact-social {
-  font-size: 25px;
-  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  padding-bottom: 3px;
+  transition: all 0.2s ease;
+}
+
+a.contact-social:hover {
+  border-color: var(--accentColor);
+  color: var(--accentColor);
 }
 
 .contact-box h2 {
   font-weight: 400;
   font-size: 23px;
   margin: 0;
+  line-height: 1.4;
 }
 
 .contact-box h2>span {
   color: var(--accentColor);
 }
 
+.contact-tagline {
+  font-size: 14px;
+  color: #94a3b8;
+  margin: 12px 0 20px 0 !important;
+}
+
 .contact-box h5 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 20px;
   display: flex;
-  gap: 10px;
-  opacity: 0.5;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.6;
+  margin-top: auto;
+  color: #94a3b8;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -69,7 +136,7 @@ a.contact-social {
   }
 
   a.contact-social {
-    font-size: 22px;
+    font-size: 19px;
   }
 }
 
@@ -83,26 +150,26 @@ a.contact-social {
   }
 
   a.contact-social {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .contact-flex p {
-    margin-top: 0px;
+    font-size: 15px;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .contact-flex {
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
   }
 
   .contact-flex p {
-    margin-bottom: 0px;
+    margin-bottom: 12px;
   }
 
   .contact-flex h4 {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .contact-section {

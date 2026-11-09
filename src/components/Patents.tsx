@@ -1,16 +1,20 @@
 import { useState, useCallback } from "react";
 import "./styles/Work.css";
+import WorkImage from "./WorkImage";
+import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const patents = [
   {
     title:
-      "An Improved Version of Artificial Intelligence and Machine Learning Algorithm to Detect The Percentages of Violence and Non-Violence from Real-Time CCTV Monitoring.",
+      "Violence Detection: Improved AI/ML Approach for Real-Time CCTV Monitoring",
     inventors: "Nithin Rontala, et al.",
     patentNumber: "Patent Application No: 202341029626",
     year: "2023",
-    link: "#",
+    description:
+      "Developed an improved artificial intelligence and machine learning algorithm to detect percentages of violence and non-violence from real-time CCTV monitoring feeds, enabling automated threat alerts with high inference speed.",
+    image: "/images/violence.png",
+    link: "https://github.com/nithinrontala",
   },
-  // Add more patents here if needed
 ];
 
 const Patents = () => {
@@ -41,7 +45,7 @@ const Patents = () => {
     <div className="work-section" id="patents">
       <div className="work-container section-container">
         <h2>
-          My <span>Patents</span>
+          Patents <span>& Innovations</span>
         </h2>
 
         <div className="carousel-wrapper">
@@ -52,7 +56,7 @@ const Patents = () => {
             aria-label="Previous patent"
             data-cursor="disable"
           >
-            &#8592;
+            <MdArrowBack />
           </button>
           <button
             className="carousel-arrow carousel-arrow-right"
@@ -60,7 +64,7 @@ const Patents = () => {
             aria-label="Next patent"
             data-cursor="disable"
           >
-            &#8594;
+            <MdArrowForward />
           </button>
 
           {/* Slides */}
@@ -81,16 +85,22 @@ const Patents = () => {
                       <div className="carousel-details">
                         <h4>{pat.title}</h4>
                         <p className="carousel-category">{pat.inventors}</p>
+                        <p className="carousel-desc-text">{pat.description}</p>
                         <div className="carousel-tools">
-                          <span className="tools-label">Patent No & Year</span>
+                          <span className="tools-label">Patent Number & Year</span>
                           <p>
                             {pat.patentNumber} ({pat.year})
                           </p>
-                          {/* View Patent button removed as requested */}
                         </div>
                       </div>
                     </div>
-                    {/* Optionally add an image or icon here for patents */}
+                    <div className="carousel-image-wrapper">
+                      <WorkImage
+                        image={pat.image}
+                        alt={pat.title}
+                        link={pat.link}
+                      />
+                    </div>
                   </div>
                 </div>
               ))}
@@ -102,7 +112,9 @@ const Patents = () => {
             {patents.map((_, index) => (
               <button
                 key={index}
-                className={`carousel-dot ${index === currentIndex ? "carousel-dot-active" : ""}`}
+                className={`carousel-dot ${
+                  index === currentIndex ? "carousel-dot-active" : ""
+                }`}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to patent ${index + 1}`}
                 data-cursor="disable"

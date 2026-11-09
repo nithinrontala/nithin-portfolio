@@ -5,16 +5,22 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "AI Humaniser",
-    category: "NLP / Generative AI",
-    tools: "Python, LLM workflows, Prompt tuning, AWS EC2, Humanized text generation",
-    image: "/images/1.png",
+    title: "Learning Hub",
+    category: "Full-Stack Web Application",
+    tools: "React, MongoDB, REST APIs, Dynamic Filtering, Automated Email Workflow",
+    description:
+      "A full-stack educational web application for discovering and applying to programs. Features multi-criteria dynamic filtering (category, duration, start date), an automated application submission workflow with confirmation emails, and a comprehensive counselor review workflow for application decisions.",
+    image: "/images/preview.png",
+    link: "https://github.com/nithinrontala",
   },
   {
-    title: "Learning Hub",
-    category: "Full-stack Application",
-    tools: "MongoDB, React, Program discovery, Applicant workflow, Counselor review system",
-    image: "/images/placeholder.webp",
+    title: "AI Humanizer",
+    category: "NLP-Based Text Transformation",
+    tools: "Python, Hugging Face Transformers, AWS EC2, NLP Pipelines, Cloud Inference",
+    description:
+      "An end-to-end NLP-based model and inference pipeline engineered to transform AI-generated content into more natural and human-like language. Leverages Hugging Face Transformers for sophisticated linguistic transformation and is deployed on AWS EC2 for cloud inference.",
+    image: "/images/1.png",
+    link: "https://github.com/nithinrontala",
   },
 ];
 
@@ -48,7 +54,7 @@ const Work = () => {
     <div className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
-          My <span>Work</span>
+          Featured <span>Projects</span>
         </h2>
 
         <div className="carousel-wrapper">
@@ -90,14 +96,21 @@ const Work = () => {
                         <p className="carousel-category">
                           {project.category}
                         </p>
+                        <p className="carousel-desc-text">
+                          {project.description}
+                        </p>
                         <div className="carousel-tools">
-                          <span className="tools-label">Tools & Features</span>
+                          <span className="tools-label">Technologies & Architecture</span>
                           <p>{project.tools}</p>
                         </div>
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
+                      <WorkImage
+                        image={project.image}
+                        alt={project.title}
+                        link={project.link}
+                      />
                     </div>
                   </div>
                 </div>
@@ -110,8 +123,9 @@ const Work = () => {
             {projects.map((_, index) => (
               <button
                 key={index}
-                className={`carousel-dot ${index === currentIndex ? "carousel-dot-active" : ""
-                  }`}
+                className={`carousel-dot ${
+                  index === currentIndex ? "carousel-dot-active" : ""
+                }`}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to project ${index + 1}`}
                 data-cursor="disable"
